@@ -62,6 +62,39 @@ let user = {
 
 
 console.log(user.posts[0].comments[0].text)
+
+
+let car = {
+    make:"toyota",
+    color:"blue",
+    past_owners:{
+        owner1:{
+            first_name:"joy",
+            last_name:"kim"
+         
+        }
+   
+    }
+}
+  console.log (car?.past_owners?.owners2?.first_name)
+
+
+  let numbers =[1,2,3,4,5]
+  let numbers2 =[... numbers,6,7,8]
+  console.log(numbers2)
+
+  let arr1 = [1, 2, 3];
+let arr2 = [4, 5, 6];
+
+let num = arr1.concat(arr2);
+
+console.log(num); 
+
+let name = "john"
+let spread = [...name]
+console.log(spread)
+
+
        
     </script>
 </body>
