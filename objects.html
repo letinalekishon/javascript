@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--  -->
+    <div>
+        JS objects
+    </div>
+
+    <script>
+        let person ={
+            name:"mary",
+            age:21,
+            address:"kimathi street,nairobi",
+            ismarried:false,
+            job_tittle:"software developer",
+            "phone number":["072342223","07123343445"],
+            info:{
+                DOB:2000,
+                date:7,
+                day:"monday"
+
+            }
+
+        }
+let keys = Object.keys(person)
+let values = Object.values(person)
+let entries = Object.entries(person)
+console.log(keys)
+console.log(values)
+console.log(entries)
+
+let user = {
+    name:"miles",
+    hobbies:["playing","painting"],
+    posts:[
+        {
+            id:1,
+            tittle:"my fist post",
+            comments:[
+                {
+                    id:101, text :"Great post!"
+                },
+                {id:102, text:"Thanks for sharing"},
+
+
+            ],
+        },
+        {
+            id:2,
+            title:"Another day",
+            comments:[],
+
+        },
+    ],
+
+};
+
+
+console.log(user.posts[0].comments[0].text)
+       
+    </script>
+</body>
+</html>
